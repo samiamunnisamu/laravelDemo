@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/posts/view', 'Post\PostController@index')->name('posts-view');
