@@ -9,6 +9,13 @@
 <body>
 
 <h1>Show All Posts </h1>
+
+
+@foreach($posts as $post)
+<h2>{{$post->title }}</h2>
+<p> {{ $post->description }} </p>
+<hr>
+@endforeach
     
 </body>
 </html>
